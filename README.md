@@ -1,3 +1,5 @@
+<p align="center"><img src="https://hosting.kiniditech.com/gosmsgateway_logo.png" width="200" alt="GoSMSGateway API - Laravel Library (GoSms)"></p>
+
 # GoSMSGateway API - Laravel Library (GoSms)
 
 GoSMSGateway API - Laravel Library
