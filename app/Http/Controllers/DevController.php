@@ -16,8 +16,10 @@ class DevController extends Controller
         $mobile = $request->input('mobile_phone');
         $message = $request->input('message');
         $trxid = uniqid();
+		$type = 0;
+		$debug = false;
 
-        $result = GoSms::send($mobile, $message, $trxid);
+		$result = GoSms::send($mobile, $message, $trxid, $type, $debug);
 
         return $result; // Boolean
     }

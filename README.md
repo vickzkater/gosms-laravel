@@ -46,12 +46,16 @@ How to call the function send SMS using GoSms library
 $mobile = $request->input('mobile_phone');
 $message = $request->input('message');
 $trxid = uniqid();
+$type = 0;
+$debug = false;
 
-$result = GoSms::send($mobile, $message, $trxid);
+$result = GoSms::send($mobile, $message, $trxid, $type, $debug);
 
 return $result; // Boolean
 ...
 ```
+
+If you want to debug the function, set `$debug = true;` then the response of the function will be a string containing the response code and the response message from GoSMSGateway API (sample: "1702 - Invalid Username or Password")
 
 For sample, please check `DevController.php`
 

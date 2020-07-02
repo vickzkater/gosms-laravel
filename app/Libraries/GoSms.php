@@ -37,7 +37,7 @@ class GoSms
         }
         if (!$username || !$password) {
             if ($debug) {
-                return 'Auth credentials is not set';
+                return '0000 - Auth credentials is not set';
             } else {
                 return false;
             }
