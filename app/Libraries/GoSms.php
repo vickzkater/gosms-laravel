@@ -35,7 +35,7 @@ class GoSms
         if (!$password) {
             $password = env('GOSMS_AUTH_PASS', 'xxx');
         }
-        if ($username == 'xxx' || $password == 'xxx') {
+        if (!$username || !$password) {
             if ($debug) {
                 return 'Auth credentials is not set';
             } else {
